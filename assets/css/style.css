@@ -231,6 +231,14 @@ button.burger.burger2.on span:before {
 #header .navbar {
   padding: 20px 0;
 }
+#header .navbar .navbar-collapse .nav-item {
+  display: flex;
+  align-items: center;
+}
+#header .navbar .navbar-collapse .nav-item .nav-link {
+  text-align: center;
+  font-size: 14px;
+}
 #main {
   position: relative;
   padding: 200px 0;
@@ -510,6 +518,20 @@ button.burger.burger2.on span:before {
 #footer-links ul li a:hover {
   text-decoration: none;
   color: #fff;
+}
+#modelBuy .modal-content .modal-header {
+  border-radius: 0;
+  text-align: center;
+  background: #292a3f;
+}
+#modelBuy .modal-content .modal-header img {
+  width: 150px;
+}
+#modelBuy .modal-content .modal-body h5 {
+  color: #292a3f;
+}
+#modelBuy #form-buy label {
+  color: #292a3f;
 }
 canvas {
   display: block;

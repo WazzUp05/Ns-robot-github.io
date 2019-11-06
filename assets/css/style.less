@@ -231,9 +231,16 @@ button.burger.burger2.on span:before {
     box-shadow: 0 0 50px #00000033;
     .navbar {
         padding: 20px 0;
-        // .navbar-collapse {
-
-        // }
+        .navbar-collapse {
+            .nav-item {
+                display: flex;
+                align-items: center;
+                .nav-link {
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 #main {
@@ -531,6 +538,30 @@ button.burger.burger2.on span:before {
                     color: #fff;
                 }
             }
+        }
+    }
+}
+
+#modelBuy {
+    .modal-content {
+        .modal-header {
+            border-radius: 0;
+            text-align: center;
+            background: #292a3f;
+            img {
+                width: 150px;
+
+            }
+        }
+        .modal-body {
+            h5 {
+                color: #292a3f;
+            }
+        }
+    }
+    #form-buy {
+        label {
+            color: #292a3f;
         }
     }
 }
