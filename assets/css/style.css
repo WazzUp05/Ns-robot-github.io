@@ -220,6 +220,25 @@ button.burger.burger2.on span:before {
 #menu-navbar.active {
   opacity: 1;
 }
+.modal-robot {
+  background: #e3c284;
+  color: #1c1d25;
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.modal-robot p {
+  color: #212529;
+  margin-bottom: 0;
+}
+.modal-robot .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
 #header {
   position: fixed;
   top: 0;
@@ -338,7 +357,8 @@ button.burger.burger2.on span:before {
   font-weight: bold;
 }
 #work {
-  background: #f5f9fc;
+  background: #f5f9fc url(../img/bg_particles1.png) no-repeat center;
+  background-size: cover;
   padding: 100px 0;
 }
 #work h2 {
@@ -372,6 +392,8 @@ button.burger.burger2.on span:before {
 }
 #robot {
   padding: 100px 0;
+  background: url(../img/bg_particles2.png) no-repeat center;
+  background-size: cover;
 }
 #robot h2 {
   font-size: 40px;
@@ -390,7 +412,8 @@ button.burger.burger2.on span:before {
   width: 100%;
 }
 #ref {
-  background: #f5f9fc;
+  background: #f5f9fc url(../img/bg_particles3.png) no-repeat center;
+  background-size: cover;
   padding: 100px 0;
 }
 #ref .ref-box {
