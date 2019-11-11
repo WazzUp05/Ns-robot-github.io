@@ -82,6 +82,25 @@ label {
 .btn-main:hover {
   background: #e6ac42;
 }
+.btn-header {
+  font-size: 19px;
+  padding: 10px 55px;
+  line-height: 24px;
+}
+.dropdown-leng-mobile {
+  display: none;
+}
+.menu-desktop {
+  position: absolute !important;
+  top: 32px;
+  right: 15px;
+}
+#graf {
+  width: 750px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 50px;
+}
 .logo {
   width: 150px;
 }
@@ -193,6 +212,9 @@ button.burger.burger2.on span:before {
 .ai-center {
   align-items: center;
 }
+.dropdown-leng {
+  margin-right: 75px;
+}
 .dropdown-leng .flag {
   width: 35px;
   height: 20px;
@@ -229,6 +251,7 @@ button.burger.burger2.on span:before {
   position: absolute;
   bottom: 25px;
   right: 25px;
+  animation: nev 8s infinite alternate;
 }
 .modal-robot p {
   color: #212529;
@@ -238,6 +261,20 @@ button.burger.burger2.on span:before {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+@keyframes nev {
+  0% {
+    opacity: 0;
+    bottom: 0px;
+  }
+  50% {
+    opacity: 1;
+    bottom: 85px;
+  }
+  100% {
+    opacity: 0;
+    bottom: 125px;
+  }
 }
 #header {
   position: fixed;
@@ -250,6 +287,9 @@ button.burger.burger2.on span:before {
 #header .navbar {
   padding: 20px 0;
 }
+#header .navbar .navbar-collapse {
+  justify-content: center;
+}
 #header .navbar .navbar-collapse .nav-item {
   display: flex;
   align-items: center;
@@ -257,6 +297,7 @@ button.burger.burger2.on span:before {
 #header .navbar .navbar-collapse .nav-item .nav-link {
   text-align: center;
   font-size: 14px;
+  line-height: initial;
 }
 #main {
   position: relative;
@@ -273,6 +314,7 @@ button.burger.burger2.on span:before {
   top: 50%;
   transform: translateY(-50%);
   flex-direction: column;
+  justify-content: center;
 }
 #main .soc-box a {
   margin: 5px;
@@ -359,7 +401,7 @@ button.burger.burger2.on span:before {
 #work {
   background: #f5f9fc url(../img/bg_particles1.png) no-repeat center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 140px 0;
 }
 #work h2 {
   font-size: 40px;
@@ -391,7 +433,7 @@ button.burger.burger2.on span:before {
   letter-spacing: normal;
 }
 #robot {
-  padding: 100px 0;
+  padding: 140px 0;
   background: url(../img/bg_particles2.png) no-repeat center;
   background-size: cover;
 }
@@ -413,8 +455,8 @@ button.burger.burger2.on span:before {
 }
 #ref {
   background: #f5f9fc url(../img/bg_particles3.png) no-repeat center;
-  background-size: cover;
-  padding: 100px 0;
+  background-size: 2500px;
+  padding: 140px 0;
 }
 #ref .ref-box {
   border-bottom: 2px solid #8d8d9742;
@@ -424,9 +466,14 @@ button.burger.burger2.on span:before {
 }
 #ref .ref-box .ref-img {
   height: 75px;
+  width: 230px;
+  max-width: 100%;
+}
+#ref .ref-box .ref-img-1 {
+  height: 105px;
 }
 #ref .ref-box .robot-3 p {
-  margin-top: 45px;
+  margin-top: 25px;
   text-align: center;
   line-height: inherit;
 }
@@ -499,7 +546,7 @@ button.burger.burger2.on span:before {
 }
 #footer .soc-box {
   justify-content: center;
-  margin: 15px 0;
+  margin: 15px auto;
 }
 #footer .soc-box a {
   margin: 5px;
@@ -646,10 +693,39 @@ canvas {
     display: block;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   #partners .partners {
     max-width: 100%;
     width: 45px;
+  }
+  #footer-links ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #footer-links ul li a {
+    font-size: 12px;
+  }
+  #graf {
+    margin-top: 100px;
+  }
+  #header .navbar .navbar-collapse .nav-item {
+    justify-content: center;
+  }
+  .dropdown-leng-mobile {
+    display: block !important;
+  }
+  .dropdown-leng-mobile .dropdown-toggle {
+    justify-content: center;
+  }
+  .dropdown-leng-mobile .dropdown-item {
+    text-align: center;
+  }
+  .dropdown-leng {
+    display: none;
+    margin-right: 0;
   }
 }
 @media (max-width: 575.98px) {
@@ -673,5 +749,21 @@ canvas {
   }
   #work p {
     text-align: justify;
+  }
+  .modal-robot {
+    display: none;
+  }
+  .soc-box {
+    width: 200px;
+  }
+}
+@media (max-width: 375.98px) {
+  #main .soc-box {
+    top: 645px;
+  }
+}
+@media (max-width: 320.98px) {
+  #main {
+    padding-top: 135px;
   }
 }
